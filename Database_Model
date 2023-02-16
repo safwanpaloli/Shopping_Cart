@@ -1,0 +1,28 @@
+  Collection Name = User
+
+
+   id (primary key)
+    first_name
+    last_name
+    email
+    phone
+    password
+
+    Product
+
+    id (primary key)
+    name
+    description
+    price
+
+    Cart
+
+    id (primary key)
+    user_id (foreign key to User)
+
+    CartItem
+
+    id (primary key)
+    cart_id (foreign key to Cart)
+    product_id (foreign key to Product)
+    quantity
