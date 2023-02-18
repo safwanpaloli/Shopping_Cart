@@ -62,13 +62,3 @@ exports.addtoProduct = async(req, res)=>{
     } 
 }
 
-exports.deleteProduct = async (req,res)=>{
-    const product_id = req.params.productid   
-    try {
-        await Product.findByIdAndDelete(product_id)
-        return res.json({success : true , message : 'product is delete'})
-    }
-    catch (error){
-             return res.json('error').status(500)
-    }
-}
