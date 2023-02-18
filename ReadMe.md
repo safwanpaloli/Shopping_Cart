@@ -9,7 +9,20 @@ The application is built with:
     mongoose : 6.9.1
     jsonwebtoken : 9.0.0
     bcrypt : 5.1.0
+    
+Features
 
+The application displays a Product, that contains  product description and price.
+
+Users can do the following:   
+   - create account and login 
+   - display the product 
+   - Add to cart
+  
+Admins can do the following:
+  - Login 
+  - Add Products
+ 
 Database
 
  adminSchema 
@@ -32,10 +45,10 @@ Database
     price : (Number)
    
  Cart 
-     user_id  : (String)
-        cartItems :[{
-            productId: String,
-            productname: String,
-            quantity: Number,
+         user_id  : (String)
+            cartItems :[{
+             productId: String,
+             productname: String,
+             quantity: Number,
         }] 
       
