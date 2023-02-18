@@ -19,10 +19,9 @@
 
     id (primary key)
     user_id (foreign key to User)
-
-    CartItem
-
-    id (primary key)
-    cart_id (foreign key to Cart)
-    product_id (foreign key to Product)
-    quantity
+      cartItem [{
+         id (primary key)
+         cart_id (foreign key to Cart)
+         product_id (foreign key to Product)
+         quantity
+}]
