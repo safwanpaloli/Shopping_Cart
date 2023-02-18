@@ -1,1 +1,9 @@
 
+http://localhost:3004/users   //Diplay products to user
+http://localhost:3004/users/registration //Register form user
+http://localhost:3004/users/add/cart //Add product to cart
+http://localhost:3004/users/displaycart //Display cart user 'only login user can see the cart'
+
+http://localhost:3004/admin/login   //admin login
+http://localhost:3004/admin//api/add/product  //Add products
+http://localhost:3004/admin/api/delete/product/:productid //delete product item 
