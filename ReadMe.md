@@ -9,6 +9,7 @@
     mongoose : 6.9.1
     jsonwebtoken : 9.0.0
     bcrypt : 5.1.0
+    mongodb cloud atlas used
     
 ### Features
 
@@ -23,7 +24,19 @@
   - Login 
   - Add Products
   - Delete Products
- 
+
+### Run 
+  
+The project 'gh repo clone safwanpaloli/Shopping_Cart' needs to be cloned. Then open it in Visual Studio Code. And open the terminal.  
+  ```
+      cd .\Shopping_Cart-main\
+     npm install
+     npx express-generator
+          
+  ```
+  
+  and again app.js file replace the app.js
+  
 ### Database
 
  #### adminSchema 
