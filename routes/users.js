@@ -30,6 +30,5 @@ router.post('/add/cart',verifyToken, addtoCarts)
 
 router.post('/displaycart' , verifyToken, displayCarts)
 
-// router.post('/delete/cart',verifyToken, deleteCart)
 
 module.exports = router;
