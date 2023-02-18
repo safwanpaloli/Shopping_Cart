@@ -22,6 +22,5 @@ router.post('/login',  adminLogin)
 
 router.post('/api/add/product',verifyToken, addtoProduct)
 
-router.delete('/api/delete/product/:productid',verifyToken, deleteProduct)
 
 module.exports = router;
