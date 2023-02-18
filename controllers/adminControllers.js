@@ -52,7 +52,7 @@ exports.addtoProduct = async(req, res)=>{
             await add_Product.save();
             return res.json({ success: true, Product: add_Product });
         }else{
-            return res.json({failed})
+            return res.json('failed')
         } 
     } catch (err) {
 
