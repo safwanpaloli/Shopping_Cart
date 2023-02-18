@@ -1,1 +1,41 @@
+## SHOPPING CART
 
+Technology
+
+The application is built with:
+    
+    expressjs : 4.16.1
+    nodejs : v16.16.0
+    mongoose : 6.9.1
+    jsonwebtoken : 9.0.0
+    bcrypt : 5.1.0
+
+Database
+
+ adminSchema 
+     
+    username : (String)
+    password : (String)
+    status  : (String)
+    
+ UserSchema 
+     
+      first_name (String)
+      email (String)
+      phone (Number)
+      password (String)
+    
+ ProductSchema
+ 
+    Product name : (String)
+    description : (String)
+    price : (Number)
+   
+ Cart 
+     user_id  : (String)
+        cartItems :[{
+            productId: String,
+            productname: String,
+            quantity: Number,
+        }] 
+      
