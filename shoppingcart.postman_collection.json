@@ -1,0 +1,237 @@
+{
+	"info": {
+		"_postman_id": "696c95b4-153e-42fe-ba8f-12e3401f1b04",
+		"name": "shoppingcart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25898704"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3004/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3004/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3004/users/registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "shamil",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "9999999999",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "hello",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/users/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"users",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3004/users/add/cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjAzMzc0NzllMDdlN2MyNmFjZDdiYSIsImVtYWlsIjoic2hhaHVsQGdtYWlsLmNvbSIsInBob25lIjoiOTg3NjU0MzIxMCIsImlhdCI6MTY3NjY4NjgwMCwiZXhwIjoxNzYzMDg2ODAwfQ.veaMgygGlyzdQIHxuURvcScSXGD7bCeNwZXp-YftDJ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_Id",
+							"value": "63eef1c421b0acc9ca3b79f3",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/users/add/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"users",
+						"add",
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3004/users/displaycart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZjAzMzc0NzllMDdlN2MyNmFjZDdiYSIsImVtYWlsIjoic2hhaHVsQGdtYWlsLmNvbSIsInBob25lIjoiOTg3NjU0MzIxMCIsImlhdCI6MTY3NjY4NjgwMCwiZXhwIjoxNzYzMDg2ODAwfQ.veaMgygGlyzdQIHxuURvcScSXGD7bCeNwZXp-YftDJ8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3004/users/displaycart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"users",
+						"displaycart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3004/admin/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/admin/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3004/admin/api/add/product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZWU0YTE5ODk2NTE3MTE3MTFjNGQxNiIsImRpc3BsYXlfbmFtZSI6ImFkbWluIiwiaWF0IjoxNjc2NjkwNjI5LCJleHAiOjE3NjMwOTA2Mjl9.mAMH8YyviBvtqE1_nzfd_LXh0c4yMl6tFoTg7rSYFfM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "product_name",
+							"value": "Mi note 10",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Good quality",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "20000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3004/admin/api/add/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"admin",
+						"api",
+						"add",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
