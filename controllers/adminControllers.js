@@ -62,3 +62,24 @@ exports.addtoProduct = async(req, res)=>{
     } 
 }
 
+exports.deleteProduct = async(req,res) =>{
+        
+    let auth  = req.headers.authorization;
+    let token = auth.split(" ")[1]
+    let decodetoken =JSON.parse(Buffer.from(token.split('.')[1], 'base64').toString());
+
+    let username = decodetoken._id
+
+    const productId = req.params.id
+
+    try {
+         if(username === username){
+             
+            await Product.findByIdAndDelete(productId)
+            return res.json({success : true, message : "product deleted successfully"})
+         }
+    } catch (error) {
+        
+    }
+
+}
