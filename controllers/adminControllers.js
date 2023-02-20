@@ -19,7 +19,7 @@ exports.adminLogin = async(req,res) => {
             const token = jwt.sign(response,"secret",{expiresIn: oneDay})
             return res.json({auth : true , token : token,response})
        }else{      
-            res.json("something wrong").status(500)
+            return res.json("something wrong").status(500)
        }
 
 
